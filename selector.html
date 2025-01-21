@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /*2 type selector*/
+
+    p{
+        font-size: 16px;
+        margin-bottom: 30px;
+        padding: 30px;
+    }
+    /* class selector*/
+    .highlight
+    {
+        background-color: antiquewhite;
+    }
+    /* id selector*/
+    #header
+    {
+        background-color: aquamarine;
+    }
+    /* attribute selector*/
+    input[type="text"]{
+        background-color: aquamarine;
+    }
+    /*desecnt selector*/
+    article p{
+        font-style: italic;
+    }
+    /*child selector*/
+    ul> li{
+        list-style-type: style type square;;
+    }
+    /* adjacent selector*/
+    h1+ p{
+        background-color: blue;
+    }
+    /*General sibling selector*/
+    h2~p{
+        background-color: blueviolet;
+    }
+    /*pseudo  selector*/
+    a:hover{
+        background-color: bisque;
+    }
+    /*pseudo element selector*/
+    p::first-letter{
+        font-size: medium;
+    }
+    /*grouping selector*/
+    h1,h2{
+        color: brown;
+    }
+
+</style>
+<body>
+    <header>id="header">This is the header</header>
+    <h1>Main Header</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quisquam in, fugiat repudiandae laborum, unde accusantium sed asperiores ipsa, sint impedit. Vero est delectus nesciunt dolore adipisci atque ullam quo recusandae accusantium quibusdam nostrum repellendus odit, molestiae placeat voluptates assumenda. Vitae eius quae fugit, harum quisquam quibusdam eum sunt cupiditate! Eos nisi incidunt soluta neque officiis officia inventore, temporibus, libero ex qui distinctio dignissimos id alias, perferendis est repellendus commodi debitis atque voluptatibus repudiandae at? Inventore consequatur, hic est asperiores labore adipisci reiciendis alias mollitia dolore, rerum cupiditate at quidem.
+    </p>
+    <p class="highlight">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque dolorem voluptatem iusto minus asperiores, aut quis id cupiditate deserunt impedit. Corrupti quod accusantium voluptatem at explicabo asperiores minima fuga? Qui vero soluta consectetur facilis! Laudantium, praesentium. Enim error repellat quo, exercitationem doloribus cupiditate unde autem commodi labore at eligendi blanditiis voluptatem possimus praesentium ratione, libero deleniti et? Officiis consectetur praesentium amet repellendus neque animi quo! Deleniti ipsam quasi error odio?
+    </p>
+    <input type="text" placeholder="Enter the Text">
+    <article>
+        <ul>
+            <li>
+                direct chid list item
+            </li>
+            <li>
+                another chid
+                <ul>
+                    <li>this is not the direct child of first ul</li>
+                </ul>
+            </li>
+        </ul>
+        <h2>Sub heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error blanditiis nostrum saepe maiores dicta? Quae commodi perferendis quam architecto quaerat, animi facere! Commodi doloribus eos nobis ut! Perspiciatis, ut impedit. Quos aperiam ex necessitatibus praesentium aliquam earum ducimus asperiores sequi ad odio, magni quia error ea deleniti, repellendus obcaecati veritatis fugit fugiat inventore perspiciatis quam, modi rerum. In quos aliquid maiores distinctio eius placeat, vitae inventore perferendis beatae doloremque nemo commodi tenetur! Soluta cumque natus odio aperiam tempore. Consequatur similique debitis velit porro vero, aliquam atque. Eveniet dolorem vitae blanditiis excepturi enim, repudiandae velit nulla dicta alias, vel, praesentium quos?</p>
+    </article>
+</body>
+</html>
